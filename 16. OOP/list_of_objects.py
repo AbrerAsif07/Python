@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Passing through object paramter is preferred rather than asking user in method function itself
 class Student:
     def __init__(self, roll_no: int, name: str, age: int, gender: str, marks=[]):
         self.roll_no = roll_no
@@ -58,7 +59,9 @@ while True:
         x = Student(roll_no, name, age, gender, marks)
         student_details.append(x)
 
-    elif choice == 2:
+    elif (
+        choice == 2
+    ):  # First traverse through value to store index, then delete element based on its index
         rno = int(input("Enter student roll number you want to delete = "))
         student_index = -1
         for i in range(0, len(student_details)):
@@ -101,3 +104,8 @@ while True:
         break
     else:
         print("Invalid Choice")
+
+    # incase indentation error takes place the user is ought to resume sending profiles to dynamic
+    # profiles as segmentation error takes place at a higher pace rather than ml distribution
+    # so for the user authentication process it is ought that the user takes in control of the dynamic
+    # practices for the full fledged use cases of personification.
