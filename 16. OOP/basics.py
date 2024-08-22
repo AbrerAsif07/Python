@@ -4,6 +4,8 @@ A class is a blueprint containing various attributes
 
 An object is an entity which contains all the attributes of the class
 """
+
+
 class Student:
     id = 0
     name = ""
@@ -14,7 +16,7 @@ class Student:
 s1 = Student()
 s2 = Student()
 s1.id = 1
-s1.name = "Anirudh"
+s1.name = "Anirudh Sharma"
 s1.age = 18
 s1.gender = "Male"
 print(f"s1 = {s1}")
