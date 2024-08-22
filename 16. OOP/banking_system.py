@@ -45,6 +45,7 @@ class Banking:
 accounts: List[Banking] = []
 
 while True:
+    print("Banking Application System ")
     print("1) Add account details")
     print("2) Display all account details")
     print("3) Check balance of an account")
